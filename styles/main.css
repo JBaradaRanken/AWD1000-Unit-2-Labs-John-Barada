@@ -1,0 +1,150 @@
+/* styles.css */
+
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+a:link,
+a:visited {
+    color: maroon;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: steelblue;
+}
+
+aside a:link,
+aside a:visited {
+    color: bold steelblue;
+    text-decoration: none;
+}
+
+aside a:hover,
+aside a:focus {
+    color: maroon;
+}
+
+header h1:first-child {
+    color: steelblue;
+    font-style: italic;
+    text-shadow: 2px 2px steelblue;
+    margin-left: 20px;
+}
+
+header img {
+    float: left;
+    margin-right: 20px;
+}
+
+header {
+    overflow: auto;
+    border-bottom: 2px solid steelblue;
+    background: linear-gradient(to bottom, white, lightsteelblue);
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+header h1:first-child {
+    color: steelblue;
+    font-style: italic;
+    text-shadow: 2px 2px steelblue;
+    margin-left: 20px;
+}
+
+body {
+    width: 900px;
+    border: 2px solid steelblue;
+    box-shadow: 0 0 10px black;
+    padding: 20px;
+}
+
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.column {
+    float: inline-start;
+    width: 20%;
+    height: 20%;
+    padding: 1px;
+    flex: 50%;
+}
+.column1 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.column1 li {
+    margin: 0; /* Remove the default margin */
+}
+
+.column1 a {
+    text-decoration: none; /* Remove underlines from links */
+}
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+aside h2 {
+    color: steelblue;
+}
+section {
+    margin-right: 20px;
+    padding: 20px;
+}
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+.top-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    font-size: 24px;
+    text-align: center;
+  }
+  .top-menu ul li {
+    display: inline;
+  }
+  .top-menu ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 24px;
+  }
+  .top-menu ul li a:hover {
+    background-color: gray;
+    color: white;
+  }
+  .top-menu ul li a.current {
+    background-color: orange;
+    color: white;
+  }
